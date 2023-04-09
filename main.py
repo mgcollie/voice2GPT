@@ -11,12 +11,31 @@ openai.api_key = os.getenv('OPEN_API_KEY')
 
 
 def text_to_speech(text: str) -> None:
+    """
+    Convert the given text to speech and play it.
+
+    Args:
+        text (str): The text to be converted to speech.
+    """
+
     print(text)
     engine.say(text)
     engine.runAndWait()
 
 
 def call_openai(prompt: str, temperature: float = 0.5, max_tokens: int = 100) -> str:
+    """
+    Call the GPT-4 chat model and fetch the response for the given prompt.
+
+    Args:
+        prompt (str): The prompt for the GPT-4 model.
+        temperature (float, optional): The sampling temperature. Defaults to 0.5.
+        max_tokens (int, optional): The maximum number of tokens to be returned. Defaults to 100.
+
+    Returns:
+        str: The GPT-4 model's response.
+    """
+
     prompt = prompt.strip()
 
     messages = [{"role": "user", "content": prompt}]
@@ -32,6 +51,16 @@ def call_openai(prompt: str, temperature: float = 0.5, max_tokens: int = 100) ->
 
 
 def listen_and_transcribe(prompt: str) -> Optional[str]:
+    """
+    Record audio, transcribe it, and return the transcribed text.
+
+    Args:
+        prompt (str): The prompt to be spoken before listening to the audio.
+
+    Returns:
+        Optional[str]: The transcribed text, or None if the transcription failed.
+    """
+
     text_to_speech(prompt)
 
     with sr.Microphone() as source:
