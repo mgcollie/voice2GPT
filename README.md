@@ -38,13 +38,15 @@ pip install -r requirements.txt
 # Setup
 To use this voice assistant, you need an API key for the OpenAI GPT-4 model. Store the API key in an environment variable called OPEN_API_KEY. You can do this in your shell or terminal before running the script:
 
+
+# Usage
 ```bash
 python voice_assistant.py
 ```
 
-The voice assistant will ask how many tokens you want to use. Speak your response, and the assistant will transcribe it.
+The voice assistant will ask how many tokens you want to use. Wait until you see `Listening...` in the terminal. Speak your response, and the assistant will transcribe it.
 
-Next, the voice assistant will ask for your question. Speak your question, and the assistant will transcribe it and send it to the GPT-4 model. The GPT-4 model's response will be converted to speech and played.
+Next, the voice assistant will ask for your question. Wait until you see `Listening...` in the terminal. Speak your question, and the assistant will transcribe it and send it to the GPT-4 model. The GPT-4 model's response will be converted to speech and played.
 
 If there is any issue during transcription, the voice assistant will inform you and exit the program.
 
