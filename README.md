@@ -56,5 +56,5 @@ If you face any issues related to the microphone, ensure that your system's micr
 In case of issues with the GPT-4 API, check your API key and make sure it's set up correctly.
 
 # License
-This project is licensed under the MIT License. See the LICENSE file for more information.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/mgcollie/voice2GPT/blob/main/LICENSE) file for more information.
 
