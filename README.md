@@ -11,15 +11,27 @@
 
 This project demonstrates the use of GPT-4, a large language model by OpenAI, as a voice-based text assistant. The assistant listens to the user's questions, fetches responses from GPT-4, and reads them aloud.
 
+# Clone the reqpository
+```bash
+git clone https://github.com/mgcollie/voice2GPT.git
+```
+
+# Move into the directory
+```bash
+cd voice2GPT
+```
+
 # Requirements
-To run this voice assistant, you'll need the following Python packages:
+To run this voice assistant, we assume you already have python 3.9+ installed and you will need to  
+create a virtual environment and install the following packages:
 
 - openai
 - pyttsx3
 - SpeechRecognition
-Install them using pip:
 
 ```bash
+python -m venv venv
+.venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
